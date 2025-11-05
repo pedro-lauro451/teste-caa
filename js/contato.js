@@ -1,7 +1,7 @@
 const headerText = document.querySelector('#header-text');
 headerText.innerText = 'Contato';
 const image = document.getElementById('header');
-image.style.backgroundImage = `url(../images/contato-main-banner.jpeg)`
+image.style.backgroundImage = `url(./images/contato-main-banner.jpeg)`
 document.getElementById("header-buttons").style.display = "none";
 
 const closeMenu = document.querySelector('.close-menu');
@@ -27,10 +27,10 @@ collapseBtn.addEventListener('click', function () {
     collapseContent.classList.toggle('show');
     collapseBtn.classList.toggle('collapsed');
 
-    if (setaImg.getAttribute('src') === '../images/seta-on.png') {
-        setaImg.setAttribute('src', '../images/seta-off.png');
+    if (setaImg.getAttribute('src') === './images/seta-on.png') {
+        setaImg.setAttribute('src', './images/seta-off.png');
     } else {
-        setaImg.setAttribute('src', '../images/seta-on.png');
+        setaImg.setAttribute('src', './images/seta-on.png');
     }
 });
 
@@ -39,8 +39,8 @@ document.addEventListener('click', function (event) {
         collapseContent.classList.remove('show');
         collapseBtn.classList.remove('collapsed');
 
-        if (setaImg.getAttribute('src') === '../images/seta-off.png') {
-            setaImg.setAttribute('src', '../images/seta-on.png');
+        if (setaImg.getAttribute('src') === './images/seta-off.png') {
+            setaImg.setAttribute('src', './images/seta-on.png');
         }
     }
 });

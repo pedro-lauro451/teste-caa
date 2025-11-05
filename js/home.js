@@ -33,10 +33,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 collapseContent.classList.toggle('show');
                 collapseBtn.classList.toggle('collapsed');
 
-                if (setaImg.getAttribute('src') === '../images/seta-on.png') {
-                    setaImg.setAttribute('src', '../images/seta-off.png');
+                if (setaImg.getAttribute('src') === './images/seta-on.png') {
+                    setaImg.setAttribute('src', './images/seta-off.png');
                 } else {
-                    setaImg.setAttribute('src', '../images/seta-on.png');
+                    setaImg.setAttribute('src', './images/seta-on.png');
                 }
             });
 
@@ -45,8 +45,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     collapseContent.classList.remove('show');
                     collapseBtn.classList.remove('collapsed');
 
-                    if (setaImg.getAttribute('src') === '../images/seta-off.png') {
-                        setaImg.setAttribute('src', '../images/seta-on.png');
+                    if (setaImg.getAttribute('src') === './images/seta-off.png') {
+                        setaImg.setAttribute('src', './images/seta-on.png');
                     }
                 }
             });
@@ -75,9 +75,9 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 const images = [
-    '../images/home-main-banner1.jpeg',
-    '../images/home-main-banner2.jpeg',
-    '../images/home-main-banner3.jpeg'
+    './images/home-main-banner1.jpeg',
+    './images/home-main-banner2.jpeg',
+    './images/home-main-banner3.jpeg'
 ];
 
 const texts = [
