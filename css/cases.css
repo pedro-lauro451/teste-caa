@@ -1,0 +1,342 @@
+.cases-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-bottom: 120px;
+}
+
+.cases-content h1 {
+    color: #CACACA;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.cases-left {
+    max-width: 640px;
+}
+
+.cases-left p {
+    font-size: 29px;
+    line-height: normal;
+}
+
+.cases-partners {
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cases-partners p {
+    font-size: 23px;
+    line-height: normal;
+}
+
+.cases-partners h1 {
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+.cases-partners > div:nth-child(3) {
+    margin-top: 5em;
+}
+
+.hr-vertical {
+    border: 1px solid;
+    color: #000;
+    margin-top: 10px;
+}
+
+.cases-right {
+    max-width: 280px;
+}
+
+.cases-right h2 {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.cases-right h1 {
+    font-size: 20px;
+    text-transform: none;
+    color: #000;
+}
+
+.cases-right span {
+    color: #6A6A6A;
+    font-size: 14px;
+}
+
+.whatwasdone {
+    margin-bottom: 60px;
+}
+
+.cases-right a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.cases-right a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-button {
+    background-color: #000;
+    font-size: 15px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+}
+
+.contact-button-alt {
+    background-color: #fff;
+    font-size: 15px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4em;
+}
+
+.contact-button-alt a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.impact {
+    background-color: #000;
+    padding-top: 80px;
+    padding-bottom: 160px;
+}
+
+.impact h1 {
+    color: #CACACA;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.impact p {
+    color: #fff;
+    font-size: 25px;
+    max-width: 1044px;
+}
+
+.impact-text {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.carousel-title h1 {
+    font-size: 50px;
+}
+
+.carousel-title {
+    overflow: hidden;
+}
+
+.carousel-cases {
+    display: inline-flex;
+    gap: 24px;
+    text-align: -webkit-center;
+}
+
+.carousel-img {
+    width: 380px;
+    height: 389px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+    margin-top: 60px;
+    align-items: center;
+}
+
+.carousel-controls {
+    display: flex;
+    gap: 12px;
+}
+
+.carousel-controls img {
+    height: fit-content;
+}
+
+.prev-button {
+    border: 1px solid;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.next-button {
+    border: 1px solid;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.card-carousel p {
+    font-size: 30px;
+    margin-top: 18px;
+}
+
+.card-carousel a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.card-carousel a:hover {
+    color: #fff;
+}
+
+.button-case-card {
+    background-color: #000;
+    border-radius: 25px;
+    border: 1px solid;
+    width: 167px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.help-redirect {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 220px 0;
+}
+
+.help-redirect span {
+    font-size: 45px;
+    color: #BDBDBD;
+    line-height: 24px;
+}
+
+.help-redirect a {
+    font-size: 68px;
+    color: #000;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.help-redirect a:hover {
+    color: #000;
+}
+
+@media (max-width: 1200px) {
+    .help-redirect span {
+        font-size: 26px;
+    }
+
+    .help-redirect a {
+        font-size: 32px;
+    }
+
+    .help-redirect {
+        margin: 140px 0;
+    }
+
+    .cases-content h1 { 
+        font-size: 24px;
+    }
+
+    .cases-partners p {
+        font-size: 18px;
+        line-height: inherit;
+    }
+
+    .cases-partners h1 {
+        margin-bottom: 1em;
+    }
+
+    .cases-partners div img {
+        max-width: 200px;
+    }    
+
+    .cases-content {
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+
+    .hr-vertical {
+        margin: 24px 0;
+    }
+
+    .whatwasdone {
+        margin-bottom: 24px;
+    }
+
+    .cases-right {
+        max-width: max-content;
+    }
+
+    .impact {
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+
+    .impact h1 {
+        font-size: 24px;
+    }
+
+    .impact p {
+        font-size: 18px;
+    }
+
+    .carousel-title h1 {
+        font-size: 30px;
+    }
+
+    .carousel-img {
+        width: 280px;
+        height: 289px;
+    }
+
+    .card-carousel p {
+        font-size: 24px;
+        margin-top: 8px;
+    }
+
+    .button-case-card {
+        width: 156px;
+        height: 42px;
+    }
+
+    .prev-button,
+    .next-button {
+        width: 46px;
+        height: 46px;
+    }
+}

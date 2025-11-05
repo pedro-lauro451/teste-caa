@@ -1,0 +1,162 @@
+header {
+    background-color: #000;
+}
+
+hr {
+    padding: 0;
+    margin: 0;
+    background-color: #313131;
+    height: 2px;
+    opacity: 1;
+}
+
+#header-buttons {
+    display: none;
+}
+
+#header {
+    height: 250px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5em;
+}
+
+.timeline-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/timeline-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+
+.timeline-elements {
+    display: flex;
+    justify-content: center;
+}
+
+.timeline-element {
+    color: #313131;
+    text-align: center;
+    width: 14.2%;
+    display: inline-block;
+    position: relative;
+    margin-top: 25px;
+}
+
+.timeline-element::before {
+    content: '';
+    width: 2px;
+    height: 25px;
+    background: #313131;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.element-title {
+    font-size: 20px;
+    color: #AFAFAF;
+}
+
+.element-description {
+    font-size: 14px;
+    color: #AFAFAF;
+}
+
+.timeline-year {
+    color: #AFAFAF;
+    text-align: center;
+    width: 14.2%;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.mobile-elements {
+    display: none;
+}
+
+.help-redirect {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 220px 0;
+    background-color: #000;
+}
+
+.help-redirect span {
+    font-size: 45px;
+    color: #BDBDBD;
+    line-height: 24px;
+}
+
+.help-redirect a {
+    font-size: 68px;
+    color: #6D6D6D;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.help-redirect a:hover {
+    color: #6D6D6D;
+}
+
+
+@media (max-width: 991px) {
+    .timeline-section {
+        height: 100%;
+    }
+
+    #header {
+        height: 150px;
+    }
+
+    .timeline-elements {
+        flex-direction: column;
+    }
+
+    .timeline-element::before {
+        display: none;
+    }
+
+    .timeline-year {
+        width: 100%;
+        display: flex;
+    }
+
+    .timeline-year:nth-child(even) {
+        justify-content: flex-start;
+    }
+
+    .timeline-year:nth-child(odd) {
+        justify-content: flex-end;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .desktop-elements {
+        display: none;
+    }
+
+    .mobile-elements {
+        display: block;
+    }
+
+    .timeline {
+        padding-top: 0px;
+    }
+
+    .timeline-help {
+        height: auto;
+    }
+
+    .help-redirect a {
+        font-size: 45px;
+        text-align: center;
+    }
+}

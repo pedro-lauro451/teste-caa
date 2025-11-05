@@ -1,0 +1,131 @@
+
+.contact-form-title { 
+    font-size: 50px;
+}
+.contact-form { 
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.form-col{ 
+    background-color: #F3F3F3;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+.contact-col { 
+    padding-top: 100px ;
+}
+.contact-form input { 
+    border: none;
+    padding: 0;
+    outline: none;
+    font-size: 14px;
+    font-family: Varela;
+    background-color: transparent;
+    width: 100%;
+}
+
+.success-message {
+    position: absolute;
+    top: 138px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: green;
+    width: auto;
+    padding: 0 25px;
+    min-height: 50px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+}
+
+.contact-form label { 
+    position: absolute;
+    left: 0;
+    top: 6px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+    font-family: Varela;
+}
+
+.contact-form .form-group { 
+    border-bottom: 1px solid #444444;
+    position: relative;
+    padding: 0.375em 0;
+    width: 100%;
+}
+
+.form-group.required label::after { 
+    content: "*";
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-group input:focus + label,.form-group input:valid + label { 
+    top: -18px;
+}
+
+.form-row { 
+    display: flex;
+    gap: 40px;
+}
+
+.email-icon::after{ 
+    content: url('../images/icons/emailIcon.svg');
+}
+
+.tel-icon::after{ 
+    content: url('../images/icons/telIcon.svg');
+}
+.location-icon::after{ 
+    content: url('../images/icons/locationIcon.svg');
+}
+
+.submit-contact-form{ 
+    border: none;
+    background-color: #000;
+    color: #fff;
+    padding: 1em 3em;
+    border-radius: 2em;
+}
+
+.form-group:has(input.is-invalid) { 
+    border-color: red;
+}
+
+.form-group input.is-invalid + label { 
+    color: red;
+}
+
+@media (max-width: 1200px) {
+    .contact-form-title {
+        font-size: 30px;
+    }
+
+    .form-col {
+        padding-top: 42px;
+        padding-bottom: 42px;
+    }
+
+    .contact-mobile-class {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .contact-col {
+        padding-top: 32px;
+        padding-bottom: 42px;
+    }
+}
