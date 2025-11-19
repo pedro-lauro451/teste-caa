@@ -21,7 +21,6 @@ hr {
 .timeline {
     display: flex;
     flex-direction: column;
-    padding-top: 5em;
 }
 
 .timeline-section {
@@ -30,6 +29,11 @@ hr {
     background-position: center;
     background-size: cover;
     height: 500px;
+}
+
+.timeline-paragraph {
+    color: #AFAFAF;
+    padding-bottom: 5em;
 }
 
 .timeline-elements {

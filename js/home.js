@@ -81,7 +81,7 @@ const images = [
 ];
 
 const texts = [
-    'Especialistas em negócios e plataformas de tecnologia de CX',
+    'Especialistas em Marketing de Dados e CRM',
     '10 Most Promising Digital Experience Solutions Provider In Latin America',
     'Oracle CX Partner Of The Year'
 ];
