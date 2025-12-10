@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $body .= "Assunto: $subject\r\n\r\n";
     $body .= "Mensagem: $message\r\n\r\n";
 
-    if (mail("contato@grupocaa.com.br", $assunto, $body, $headers)) {
+    if (mail("contato@adin.com.br", $assunto, $body, $headers)) {
         header("Location: contato.html?status=success");
         exit();
     } else {

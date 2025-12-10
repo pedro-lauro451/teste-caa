@@ -88,7 +88,7 @@ p {
 }
 
 .footer-companies-spacer {
-    margin-top: 1em;
+    margin-top: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -344,13 +344,8 @@ button.navbar-toggler {
 }
 
 .cases-partners-img img {
-    width: 183px;
+    max-width: 183px;
 }
-
-.cases-partners-img:last-of-type {
-    margin-top: 3em;
-}
-
 
 @media (max-width: 991px) {
     .footer-vertical-line {

@@ -32,6 +32,7 @@ hr {
 }
 
 .timeline-paragraph {
+    text-align: center;
     color: #AFAFAF;
     padding-bottom: 5em;
 }
