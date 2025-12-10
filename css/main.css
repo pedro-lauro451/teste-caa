@@ -123,6 +123,10 @@ nav {
     align-items: center;
 }
 
+.scrolled-navbar {
+    position: relative;
+}
+
 .links-header {
     display: flex;
     gap: 24px;
@@ -175,7 +179,7 @@ header a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 400;
     text-align: center;
     line-height: 60.2px;
@@ -347,7 +351,29 @@ button.navbar-toggler {
     max-width: 183px;
 }
 
+.carousel-arrow-left {
+    width: 50px;
+    position: absolute;
+    top: 50%;
+}
+
+.carousel-arrow-right {
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
 @media (max-width: 991px) {
+
+    .carousel-arrow-left {
+        top: 75%;
+    }
+
+    .carousel-arrow-right {
+       top: 75%;
+    }
+
     .footer-vertical-line {
         display: none;
     }

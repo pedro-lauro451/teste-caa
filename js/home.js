@@ -4,11 +4,24 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(data => {
             document.querySelector('header').innerHTML = data;
 
+            const leftArrow = document.getElementById("carousel-arrow-left");
+            const rightArrow = document.getElementById("carousel-arrow-right");
+
+            if (leftArrow && rightArrow) {
+              rightArrow.onclick = function () {
+                changeImage(1); 
+              };
+
+              leftArrow.onclick = function () {
+                changeImage(-1); 
+              };
+            }
+
             const headerText = document.querySelector('#header-text');
             headerText.innerText = 'Especialistas em negócios e plataformas de tecnologia de CX';
             document.getElementById("header-buttons").style.display = "flex";
 
-            changeImage();
+            changeImage(1);
 
             const closeMenu = document.querySelector('.close-menu');
             const linksHeader = document.querySelector('.links-header');
@@ -37,17 +50,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     setaImg.setAttribute('src', './images/seta-off.png');
                 } else {
                     setaImg.setAttribute('src', './images/seta-on.png');
-                }
-            });
-
-            document.addEventListener('click', function (event) {
-                if (!event.target.closest('.custom-collapse')) {
-                    collapseContent.classList.remove('show');
-                    collapseBtn.classList.remove('collapsed');
-
-                    if (setaImg.getAttribute('src') === './images/seta-off.png') {
-                        setaImg.setAttribute('src', './images/seta-on.png');
-                    }
                 }
             });
 
@@ -100,7 +102,9 @@ const links = [
 
 let index = 0;
 
-function changeImage() {
+function changeImage(direction) {
+    index = (index + direction + images.length) % images.length;
+
     document.getElementById('header').style.backgroundImage = `url(${images[index]})`;
     document.getElementById('header-text').innerText = texts[index];
 
@@ -108,21 +112,19 @@ function changeImage() {
     button.innerText = buttons[index];
     button.setAttribute('href', links[index]);
 
-    index = (index + 1) % images.length;
-
     if (buttons[index] === 'entenda mais') {
         if (window.innerWidth > 1600) {
-            document.getElementById('header-buttons').style.top = '56%';
+            button.style.top = '56%';
         } else {
-            document.getElementById('header-buttons').style.top = '60%';
+            button.style.top = '60%';
         }
     } else {
         if (window.innerWidth > 1600) {
-            document.getElementById('header-buttons').style.top = '61%';
+            button.style.top = '61%';
         } else {
-            document.getElementById('header-buttons').style.top = '65%';
+            button.style.top = '65%';
         }
     }
 }
 
-setInterval(changeImage, 5000);
+setInterval(() => changeImage(1), 5000);
